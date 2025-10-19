@@ -665,6 +665,12 @@
             </div>
         </div>
         <audio id="bgm" src="./mucsic/ido.mp3" preload="auto" loop></audio>
+        <script>
+          document.addEventListener("click", function () {
+            const bgm = document.getElementById("bgm");
+            bgm.play();
+          }, { once: true }); // chỉ kích hoạt 1 lần
+        </script>
     </div>
     <!-- Lớp phủ hiển thị ảnh quà -->
     <div id="giftOverlay">
